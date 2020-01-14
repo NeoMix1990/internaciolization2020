@@ -1,0 +1,3 @@
+<select class="form-input col-md-2" style="display: block"#langSelect (change)="i18nConf.setSelectedLanguage(langSelect.value)">
+  <option *ngFor="let lang of i18nConf.getLanguages()" [value]="lang"[selected]="lang === this.i18nConf.currentLang">{{ lang }}</option>
+</select>
